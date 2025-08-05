@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ERGO PLUS – Ergoterm</title>
+  <title>ERGO MAX – Ergoterm</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
-    <h1>ERGO PLUS</h1>
+    <h1>ERGO MAX</h1>
     <nav>
       <ul class="nav-list">
         <li><a href="index.html">Главная</a></li>
@@ -19,12 +19,12 @@
 
   <main class="section">
     <h2>Описание модели</h2>
-    <p><strong>ERGO PLUS</strong> — модернизированная модель с автоматикой подачи топлива и системой самодиагностики. Подходит для домов, где важен минимальный ручной контроль.</p>
+    <p><strong>ERGO MAX</strong> — промышленный твердотопливный котёл для объектов площадью до 1200 м². Комплектуется системой контроля выбросов и увеличенной камерой сгорания.</p>
 
     <ul class="features">
-      <li>Мощность: 15–30 кВт</li>
-      <li>Контроллер с дисплеем</li>
-      <li>Система "чистое стекло"</li>
+      <li>Мощность: 50–120 кВт</li>
+      <li>Теплообменник из нержавеющей стали</li>
+      <li>Сенсорный блок управления</li>
     </ul>
 
     <button class="btn-back" onclick="history.back()">← Назад к каталогу</button>

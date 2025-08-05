@@ -7,7 +7,7 @@
     <meta name="keywords" content="о нас, компания, твердотопливные котлы, отопление, экологичное отопление">
     <title>О нас - Компания Котлы</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
@@ -20,11 +20,17 @@
                     <path d="M20 5C12.5 5 5 12.5 5 20C5 27.5 12.5 35 20 35C27.5 35 35 27.5 35 20C35 12.5 27.5 5 20 5Z" fill="#e67e22"/>
                     <path d="M20 10L25 20L20 30L15 20L20 10Z" fill="white"/>
                 </svg>
+                <span class="logo-text">Котлы</span>
             </div>
-            <ul>
+            <div class="hamburger" role="button" aria-label="Открыть/закрыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="index.html" aria-label="Главная страница">Главная</a></li>
                 <li><a href="catalog.html" aria-label="Каталог котлов">Каталог</a></li>
-                <li><a href="about.html" aria-label="О компании">О нас</a></li>
+                <li><a href="about.html" aria-label="О компании" class="active">О нас</a></li>
                 <li><a href="contact.html" aria-label="Контакты">Контакты</a></li>
             </ul>
         </nav>
@@ -51,18 +57,18 @@
     <footer>
         <p>&copy; 2025 Компания Котлы. Все права защищены.</p>
         <div class="social-links">
-            <a href="#" aria-label="Facebook">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-                    <path d="M9 8H11V12H15V8H17V6H15V2H13V6H11V2H9V6H7V8H9V12H7V14H9V22H13V14H11V12H13V14H15V12H17V14H19V12H21V14H23V12H24V16H0V12H1V8H3V6H1V4H3V2H5V4H7V2H9V8Z" fill="white"/>
+                    <path d="M12 2.04C6.48 2.04 2 6.52 2 12.04C2 17.56 6.48 22.04 12 22.04C17.52 22.04 22 17.56 22 12.04C22 6.52 17.52 2.04 12 2.04ZM12 4.04C16.42 4.04 20 7.62 20 12.04C20 16.46 16.42 20.04 12 20.04C7.58 20.04 4 16.46 4 12.04C4 7.62 7.58 4.04 12 4.04ZM15.56 7.56H13.56V9.56H15.56V11.56H13.56V15.56H11.56V11.56H9.56V9.56H11.56V7.56H9.56V5.56H13.56C14.66 5.56 15.56 6.46 15.56 7.56Z" fill="white"/>
                 </svg>
             </a>
-            <a href="#" aria-label="Instagram">
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-                    <path d="M12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM16 8C16.55 8 17 8.45 17 9C17 9.55 16.55 10 16 10C15.45 10 15 9.55 15 9C15 8.45 15.45 8 16 8ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7Z" fill="white"/>
+                    <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4ZM16 8C16.55 8 17 8.45 17 9C17 9.55 16.55 10 16 10C15.45 10 15 9.55 15 9C15 8.45 15.45 8 16 8ZM12 6C14.76 6 17 8.24 17 11C17 13.76 14.76 16 12 16C9.24 16 7 13.76 7 11C7 8.24 9.24 6 12 6Z" fill="white"/>
                 </svg>
             </a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

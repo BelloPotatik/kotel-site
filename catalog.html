@@ -1,77 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Каталог твердотопливных котлов для эффективного отопления.">
-    <meta name="keywords" content="твердотопливные котлы, каталог, отопление">
-    <title>Каталог котлов</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог – Ergoterm</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="parallax">
-        <nav>
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-                    <path d="M20 5C12.5 5 5 12.5 5 20C5 27.5 12.5 35 20 35C27.5 35 35 27.5 35 20C35 12.5 27.5 5 20 5Z" fill="#e67e22"/>
-                    <path d="M20 10L25 20L20 30L15 20L20 10Z" fill="white"/>
-                </svg>
-            </div>
-            <ul>
-                <li><a href="index.html" aria-label="Главная страница">Главная</a></li>
-                <li><a href="catalog.html" aria-label="Каталог котлов">Каталог</a></li>
-                <li><a href="about.html" aria-label="О компании">О нас</a></li>
-                <li><a href="contact.html" aria-label="Контакты">Контакты</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
-            <div class="hero-bg">
-                <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="hero-svg">
-                    <path d="M0 100 L50 50 L100 100 Z" fill="rgba(227, 156, 18, 0.2)" class="hero-path"/>
-                </svg>
-            </div>
-            <h1 class="animate-text">Каталог котлов</h1>
-            <p class="animate-text">Выберите идеальный котел для вашего дома.</p>
-        </section>
-    </header>
-    <main>
-        <section class="catalog animate-section">
-            <h2>Наши котлы</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="boiler1.jpg" alt="Котел Модель 1">
-                    <h3>Котел Модель 1</h3>
-                    <p>Мощность: 20 кВт, Цена: 50 000 руб.</p>
-                    <a href="product1.html">Подробнее</a>
-                </div>
-                <div class="product">
-                    <img src="boiler2.jpg" alt="Котел Модель 2">
-                    <h3>Котел Модель 2</h3>
-                    <p>Мощность: 30 кВт, Цена: 65 000 руб.</p>
-                    <a href="product2.html">Подробнее</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Компания Котлы. Все права защищены.</p>
-        <div class="social-links">
-            <a href="#" aria-label="Facebook">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-                    <path d="M9 8H11V12H15V8H17V6H15V2H13V6H11V2H9V6H7V8H9V12H7V14H9V22H13V14H11V12H13V14H15V12H17V14H19V12H21V14H23V12H24V16H0V12H1V8H3V6H1V4H3V2H5V4H7V2H9V8Z" fill="white"/>
-                </svg>
-            </a>
-            <a href="#" aria-label="Instagram">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="social-svg">
-                    <path d="M12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM12 5C8.14 5 5 8.14 5 12C5 15.86 8.14 19 12 19C15.86 19 19 15.86 19 12C19 8.14 15.86 5 12 5ZM16 8C16.55 8 17 8.45 17 9C17 9.55 16.55 10 16 10C15.45 10 15 9.55 15 9C15 8.45 15.45 8 16 8ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7Z" fill="white"/>
-                </svg>
-            </a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+  <header class="header">
+    <h1>Каталог продукции</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h2>Котлы Ergoterm</h2>
+    <ul class="products">
+        <li>
+          <h3>ERGO CLASSIC</h3>
+          <p>Надёжный базовый котёл</p>
+          <a class="btn" href="product1.html">Подробнее</a>
+        </li>
+        <li>
+          <h3>ERGO PLUS</h3>
+          <p>Котёл с автоматикой</p>
+          <a class="btn" href="product2.html">Подробнее</a>
+        </li>
+        <li>
+          <h3>ERGO MAX</h3>
+          <p>Промышленный котёл</p>
+          <a class="btn" href="product3.html">Подробнее</a>
+        </li>
+      </ul>
+      
+  </main>
+
+  <footer class="footer" id="contacts">
+    <p>Связаться: info@ergoterm.by</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
