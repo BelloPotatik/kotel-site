@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эрготерм — Контакты</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Эрготерм">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-text="home">Главная</a></li>
+                    <li><a href="about.html" data-text="about">О компании</a></li>
+                    <li><a href="products.html" data-text="products">Продукция</a></li>
+                    <li><a href="projects.html" data-text="projects">Наши проекты</a></li>
+                    <li><a href="contacts.html" data-text="contacts" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="lang-buttons">
+                <button class="lang-switch" data-lang="ru">RU</button>
+                <button class="lang-switch" data-lang="en">EN</button>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Контакты -->
+    <section class="contacts-section container fade-in">
+        <h2 data-text="contacts">Контакты</h2>
+        <p><strong>Адрес:</strong> г. Брест, Республика Беларусь</p>
+        <p><strong>Телефон:</strong> +375 ХХ ХХХ-ХХ-ХХ</p>
+        <p><strong>Email:</strong> info@ergoterm.by</p>
+
+        <!-- Форма обратной связи -->
+        <form action="#" class="contact-form fade-in">
+            <div>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="site-footer fade-in">
+        <p>&copy; 2025 Эрготерм. Все права защищены.</p>
+        <p><a href="#">Политика конфиденциальности</a></p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

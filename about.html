@@ -3,118 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О компании | Эрготерм</title>
-    <meta name="description" content="Эрготерм — производитель твердотопливных котлов в Бресте. Высокое качество, надёжность и энергоэффективность.">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Эрготерм — О компании</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="main-header">
+    <!-- Шапка -->
+    <header class="site-header">
         <div class="container header-container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo.svg" alt="Эрготерм" />
-            </a>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Эрготерм">
+            </div>
             <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Главная</a></li>
-                    <li class="dropdown">
-                        <a href="about.html" class="active">О компании</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about.html#mission">Миссия</a></li>
-                            <li><a href="about.html#history">История</a></li>
-                            <li><a href="about.html#team">Команда</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="products.html">Продукция</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                    <li class="lang-switch">
-                        <a href="#" class="active">RU</a> | <a href="#">EN</a>
-                    </li>
+                <ul>
+                    <li><a href="index.html" data-text="home">Главная</a></li>
+                    <li><a href="about.html" data-text="about" class="active">О компании</a></li>
+                    <li><a href="products.html" data-text="products">Продукция</a></li>
+                    <li><a href="projects.html" data-text="projects">Наши проекты</a></li>
+                    <li><a href="contacts.html" data-text="contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <div class="lang-buttons">
+                <button class="lang-switch" data-lang="ru">RU</button>
+                <button class="lang-switch" data-lang="en">EN</button>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero hero-about">
-        <div class="container">
-            <h1>О компании «Эрготерм»</h1>
-            <p>Надежные и эффективные твердотопливные котлы, производимые в Бресте.</p>
-        </div>
+    <!-- О компании -->
+    <section class="about-preview container fade-in">
+        <h2 data-text="about">О компании</h2>
+        <p>Эрготерм — ведущий производитель твердотопливных котлов в Бресте. Наша миссия — создавать надежные, энергоэффективные и долговечные котлы для дома и производства. Дополнить информацию.</p>
+        <p>Наши ценности: качество, инновации и забота о клиентах. Дополнить информацию.</p>
     </section>
 
-    <!-- Mission -->
-    <section id="mission" class="section">
-        <div class="container">
-            <h2>Наша миссия</h2>
-            <p>Предоставлять клиентам качественные, долговечные и энергоэффективные отопительные решения, способствующие комфорту и экономии энергии.</p>
-        </div>
-    </section>
-
-    <!-- History -->
-    <section id="history" class="section bg-light">
-        <div class="container">
-            <h2>История компании</h2>
-            <p>Компания «Эрготерм» была основана в Бресте и за годы работы стала надёжным производителем твердотопливных котлов для частных домов, предприятий и организаций.</p>
-            <img src="assets/images/history.jpg" alt="История Эрготерм" class="responsive-img">
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section id="team" class="section">
-        <div class="container">
-            <h2>Наша команда</h2>
-            <p>Наши специалисты имеют многолетний опыт в проектировании, производстве и обслуживании котельного оборудования.</p>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="assets/images/team/member1.jpg" alt="Сотрудник 1" class="responsive-img">
-                    <h3>Иван Петров</h3>
-                    <p>Главный инженер</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/images/team/member2.jpg" alt="Сотрудник 2" class="responsive-img">
-                    <h3>Сергей Иванов</h3>
-                    <p>Технический директор</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/images/team/member3.jpg" alt="Сотрудник 3" class="responsive-img">
-                    <h3>Мария Сидорова</h3>
-                    <p>Менеджер по продажам</p>
-                </div>
+    <!-- Преимущества -->
+    <section class="advantages-section container fade-in">
+        <h2>Наши преимущества</h2>
+        <div class="advantages-grid">
+            <div class="adv-card">
+                <h3>Надежность</h3>
+                <p>Высокое качество материалов и сборки.</p>
+            </div>
+            <div class="adv-card">
+                <h3>Энергоэффективность</h3>
+                <p>Снижение затрат на топливо и энергию.</p>
+            </div>
+            <div class="adv-card">
+                <h3>Поддержка</h3>
+                <p>Профессиональная консультация и сервис.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container footer-container">
-            <div class="footer-about">
-                <img src="assets/images/logo.svg" alt="Эрготерм">
-                <p>Производство твердотопливных котлов в Бресте. Качество, надежность, эффективность.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Меню</h4>
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="about.html">О компании</a></li>
-                    <li><a href="products.html">Продукция</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="footer-contacts">
-                <h4>Контакты</h4>
-                <p>г. Брест, ул. Солнечная, 91</p>
-                <p>Тел.: +375 (29) 123-45-67</p>
-                <p>Email: info@ergoterm.by</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Эрготерм. Все права защищены.</p>
-        </div>
+    <!-- Подвал -->
+    <footer class="site-footer fade-in">
+        <p>&copy; 2025 Эрготерм. Все права защищены.</p>
+        <p><a href="#">Политика конфиденциальности</a></p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

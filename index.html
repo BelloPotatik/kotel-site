@@ -1,221 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Эрготерм — Твердотопливные котлы</title>
-  <meta name="description" content="Эрготерм — производство твердотопливных котлов. Производство в Бресте. / Ergoterm — manufacturer of solid fuel boilers, Brest, Belarus." />
-  <link rel="icon" href="assets/images/logo.svg" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эрготерм — Твердотопливные котлы</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!--
-    index.html — основной документ
-    JS будет подключён общим файлом: js/main.js (включит язык, слайдер, мобильное меню и т.д.)
-    Папка с изображениями:
-      assets/images/logo.svg
-      assets/images/hero/hero-slide-1.jpg
-      assets/images/hero/hero-slide-2.jpg
-      assets/images/hero/hero-slide-3.jpg
-      assets/images/services/service-1.jpg
-      assets/images/services/service-2.jpg
-      assets/images/team/plant.jpg
-  -->
-
-  <header>
-    <div class="container nav" role="navigation" aria-label="Main">
-      <div class="brand">
-        <a href="index.html" aria-label="Ergoterm - Home">
-          <img src="assets/images/logo.svg" alt="Ergoterm logo" class="brand-logo">
-        </a>
-        <div>
-          <div class="title" data-i18n="brandName">Эрготерм</div>
-          <div class="subtitle" data-i18n="brandTag">Производство твердотопливных котлов — Брест</div>
-        </div>
-      </div>
-
-      <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileMenu" title="Меню">☰</button>
-
-      <nav class="desktop-nav" aria-label="Desktop menu">
-        <ul class="menu" role="menubar" aria-hidden="false">
-          <li role="none"><a role="menuitem" href="index.html" data-i18n="navHome">Главная</a></li>
-          <li role="none">
-            <a role="menuitem" href="services.html" aria-haspopup="true" aria-expanded="false" id="prodToggle" data-i18n="navProducts">Продукция ▾</a>
-            <div class="dropdown" role="menu" aria-labelledby="prodToggle">
-              <a href="services.html#solid" role="menuitem" data-i18n="prodSolid">Твердотопливные котлы</a>
-              <a href="services.html#pellet" role="menuitem" data-i18n="prodPellet">Пеллетные решения</a>
-              <a href="services.html#service" role="menuitem" data-i18n="prodService">Монтаж и сервис</a>
+    <!-- Шапка -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Эрготерм">
             </div>
-          </li>
-          <li role="none"><a role="menuitem" href="about.html" data-i18n="navAbout">О компании</a></li>
-          <li role="none"><a role="menuitem" href="contact.html" data-i18n="navContact">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <div class="controls-head" aria-hidden="false">
-        <div class="lang-switch" role="tablist" aria-label="Language switcher">
-          <button id="lang-ru" role="tab" aria-selected="true">RU</button>
-          <button id="lang-en" role="tab" aria-selected="false">EN</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" data-text="home" class="active">Главная</a></li>
+                    <li><a href="about.html" data-text="about">О компании</a></li>
+                    <li><a href="products.html" data-text="products">Продукция</a></li>
+                    <li><a href="projects.html" data-text="projects">Наши проекты</a></li>
+                    <li><a href="contacts.html" data-text="contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="lang-buttons">
+                <button class="lang-switch" data-lang="ru">RU</button>
+                <button class="lang-switch" data-lang="en">EN</button>
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <a class="contact-cta" href="contact.html" data-i18n="ctaContact">Связаться</a>
-      </div>
+    </header>
+
+   <!-- Слайдер -->
+<section class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="assets/images/slider/slide1.jpg" alt="Котлы Эрготерм">
+            <div class="slide-caption fade-in">
+                <h2>Котлы Эрготерм</h2>
+                <p>Надёжные твердотопливные котлы для дома и производства</p>
+                <a href="products.html" class="btn">Подробнее</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/images/slider/slide2.jpg" alt="Наши проекты">
+            <div class="slide-caption fade-in">
+                <h2>Наши проекты</h2>
+                <p>Реализованные установки по всей Беларуси</p>
+                <a href="projects.html" class="btn">Смотреть проекты</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/images/slider/slide3.jpg" alt="Дополнить информацию">
+            <div class="slide-caption fade-in">
+                <h2>Дополнить информацию</h2>
+                <p>Описание третьего слайда. Дополнить информацию.</p>
+                <a href="about.html" class="btn">Подробнее</a>
+            </div>
+        </div>
     </div>
-  </header>
+    <button class="prev-slide">&#10094;</button>
+    <button class="next-slide">&#10095;</button>
+</section>
 
-  <!-- MOBILE MENU -->
-  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
-    <div class="mobile-menu-inner">
-      <div style="display:flex;align-items:center;justify-content:space-between">
-        <a href="index.html"><img src="assets/images/logo.svg" alt="Ergoterm" style="height:34px"></a>
-        <button id="mobileClose" aria-label="Close menu">✕</button>
-      </div>
-      <nav>
-        <a href="index.html" data-i18n="navHome">Главная</a>
-        <div class="accordion">
-          <button class="acc-toggle" aria-expanded="false" aria-controls="acc1" data-i18n="navProducts">Продукция</button>
-          <div id="acc1" class="panel" hidden>
-            <a href="services.html#solid" data-i18n="prodSolid">Твердотопливные котлы</a>
-            <a href="services.html#pellet" data-i18n="prodPellet">Пеллетные решения</a>
-            <a href="services.html#service" data-i18n="prodService">Монтаж и сервис</a>
-          </div>
-        </div>
-        <a href="about.html" data-i18n="navAbout">О компании</a>
-        <a href="contact.html" data-i18n="navContact">Контакты</a>
-      </nav>
-      <div style="margin-top:auto">
-        <p style="color:rgba(255,255,255,0.7)">+375 (xx) xxx-xx-xx</p>
-        <p style="color:rgba(255,255,255,0.7)">info@ergoterm.by</p>
-      </div>
-    </div>
-  </div>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero container" aria-label="Hero">
-      <div class="carousel" id="carousel" role="region" aria-roledescription="carousel" aria-label="Hero carousel">
-        <!-- Slide 1 -->
-        <article class="slide active" data-index="0" aria-hidden="false">
-          <div class="left">
-            <div class="eyebrow" data-i18n="heroEyebrow1">Промышленное производство</div>
-            <h1 data-i18n="heroTitle1">Твердотопливные котлы Эрготерм — надежно и экономично</h1>
-            <p data-i18n="heroText1">Производство в Бресте. Модели для дома и промышленности: длительного горения, пеллетные и комбинированные.</p>
-            <a class="hero-cta" href="services.html#solid" data-i18n="heroCta1">Каталог</a>
-          </div>
-          <div class="right">
-            <figure class="hero-image" aria-hidden="true">
-              <img data-src="assets/images/hero/hero-slide-1.jpg" alt="Ergoterm boiler" class="lazy">
-            </figure>
-          </div>
-        </article>
-
-        <!-- Slide 2 -->
-        <article class="slide" data-index="1" aria-hidden="true">
-          <div class="left">
-            <div class="eyebrow" data-i18n="heroEyebrow2">Гарантия и сервис</div>
-            <h1 data-i18n="heroTitle2">Сертифицированные материалы и сервис в регионе</h1>
-            <p data-i18n="heroText2">Гарантийная поддержка, обучение персонала и запасные части в наличии.</p>
-            <a class="hero-cta" href="contact.html" data-i18n="heroCta2">Связаться</a>
-          </div>
-          <div class="right">
-            <figure class="hero-image" aria-hidden="true">
-              <img data-src="assets/images/hero/hero-slide-2.jpg" alt="Production plant" class="lazy">
-            </figure>
-          </div>
-        </article>
-
-        <!-- Slide 3 -->
-        <article class="slide" data-index="2" aria-hidden="true">
-          <div class="left">
-            <div class="eyebrow" data-i18n="heroEyebrow3">Энергоэффективность</div>
-            <h1 data-i18n="heroTitle3">Решения для оптимизации расхода топлива</h1>
-            <p data-i18n="heroText3">Модели длительного горения и автоматические пеллетные решения с высоким КПД.</p>
-            <a class="hero-cta" href="services.html#pellet" data-i18n="heroCta3">Подробнее</a>
-          </div>
-          <div class="right">
-            <figure class="hero-image" aria-hidden="true">
-              <img data-src="assets/images/hero/hero-slide-3.jpg" alt="Efficient boilers" class="lazy">
-            </figure>
-          </div>
-        </article>
-
-        <!-- controls -->
-        <div class="controls" aria-hidden="false">
-          <div class="arrow" id="prev" role="button" aria-label="Previous slide">‹</div>
-          <div class="arrow" id="next" role="button" aria-label="Next slide">›</div>
-        </div>
-
-        <!-- indicators -->
-        <div class="indicators" id="indicators" role="tablist" aria-hidden="false"></div>
-      </div>
+    <!-- О компании -->
+    <section class="about-preview container fade-in">
+        <h2 data-text="about">О компании</h2>
+        <p>Эрготерм — производство высококачественных твердотопливных котлов в Бресте. Дополнить информацию.</p>
     </section>
 
-    <!-- PRODUCTS / CARDS -->
-    <section class="container">
-      <h2 data-i18n="prodHeading">Продукция</h2>
-      <div class="grid" id="productsGrid">
-        <article class="card" style="animation-delay:60ms">
-          <h3 data-i18n="card1Title">Котлы длительного горения</h3>
-          <p data-i18n="card1Text">Модели от 20 до 500 кВт. Надёжность и простота обслуживания.</p>
-          <img data-src="assets/images/services/service-1.jpg" alt="Long-burning boiler" class="lazy">
-        </article>
-
-        <article class="card" style="animation-delay:140ms">
-          <h3 data-i18n="card2Title">Пеллетные котлы</h3>
-          <p data-i18n="card2Text">Автоматическая подача топлива для длительной автономной работы.</p>
-          <img data-src="assets/images/services/service-2.jpg" alt="Pellet boiler" class="lazy">
-        </article>
-
-        <article class="card" style="animation-delay:220ms">
-          <h3 data-i18n="card3Title">Запчасти и сервис</h3>
-          <p data-i18n="card3Text">Оригинальные комплектующие, монтаж и гарантийное обслуживание.</p>
-          <img data-src="assets/images/services/service-1.jpg" alt="Spare parts and service" class="lazy">
-        </article>
-      </div>
+    <!-- Продукция -->
+    <section class="products-preview container fade-in">
+        <h2 data-text="products">Продукция</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Котёл модель А</h3>
+                <p>Описание котла модель А. Дополнить информацию.</p>
+            </div>
+            <div class="product-card">
+                <h3>Котёл модель Б</h3>
+                <p>Описание котла модель Б. Дополнить информацию.</p>
+            </div>
+            <div class="product-card">
+                <h3>Котёл модель В</h3>
+                <p>Описание котла модель В. Дополнить информацию.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- ABOUT PREVIEW -->
-    <section style="background:linear-gradient(180deg,#fff,#f7f9fb)">
-      <div class="container about-grid">
-        <div>
-          <h2 data-i18n="aboutHeading">О компании Эрготерм</h2>
-          <p data-i18n="aboutText">Эрготерм — производитель твердотопливных котлов, производство в Бресте.</p>
-          <a class="hero-cta" href="about.html" data-i18n="aboutCta">Узнать больше</a>
+    <!-- Наши проекты -->
+    <section class="projects-section container fade-in">
+        <h2 data-text="projects">Наши проекты</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Проект 1</h3>
+                <p>Описание проекта 1. Дополнить информацию.</p>
+            </div>
+            <div class="project-card">
+                <h3>Проект 2</h3>
+                <p>Описание проекта 2. Дополнить информацию.</p>
+            </div>
         </div>
-        <div>
-          <img data-src="assets/images/team/plant.jpg" alt="Production plant" class="lazy" style="border-radius:10px">
-        </div>
-      </div>
     </section>
-  </main>
 
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <img src="assets/images/logo.svg" alt="Ergoterm" style="height:36px">
-        <p style="margin-top:10px;color:rgba(255,255,255,0.85)" data-i18n="footerAbout">Производство твердотопливных котлов — Брест</p>
-      </div>
-      <div>
-        <h4 data-i18n="contactsHeading">Контакты</h4>
-        <p data-i18n="footerPhone">Тел: +375 (xx) xxx-xx-xx</p>
-        <p data-i18n="footerEmail">Email: info@ergoterm.by</p>
-      </div>
-      <div>
-        <h4 data-i18n="addressHeading">Адрес</h4>
-        <p data-i18n="footerAddress">г. Брест, ул. Солнечная, 91</p>
-      </div>
-    </div>
-  </footer>
+    <!-- Контакты -->
+    <section class="contacts-section container fade-in">
+        <h2 data-text="contacts">Контакты</h2>
+        <p>Адрес: г. Брест, Республика Беларусь</p>
+        <p>Телефон: +375 ХХ ХХХ-ХХ-ХХ</p>
+        <p>Email: info@ergoterm.by</p>
+    </section>
 
-  <noscript>
-    <div style="background:#fffbeb;padding:12px;border-radius:6px;margin:18px;max-width:1200px;margin-left:auto;margin-right:auto">
-      
-    </div>
-  </noscript>
+    <!-- Подвал -->
+    <footer class="site-footer fade-in">
+        <p>&copy; 2025 Эрготерм. Все права защищены.</p>
+        <p><a href="#">Политика конфиденциальности</a></p>
+    </footer>
 
-  <!-- Общий JS: сюда добавим код (язык, слайдер, меню, lazy, доступность) в js/main.js по твоему сигналу -->
-  <script src="js/main.js" defer></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
