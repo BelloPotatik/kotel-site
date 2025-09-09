@@ -274,17 +274,3 @@ section {
         max-height: 60vh;
     }
 }
-
-/* Анимация логотипа */
-.logo-animate {
-    opacity: 0;
-    transform: scale(0.5);
-    animation: logoAppear 1s forwards ease-out;
-}
-
-@keyframes logoAppear {
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
